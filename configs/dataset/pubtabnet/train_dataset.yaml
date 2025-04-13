@@ -1,0 +1,9 @@
+_target_: src.datamodule.PubTabNet
+#root_dir: ../../../../DATASETS/pubtabnet
+root_dir: /your_path/pubtabnet
+label_type: ${dataset.label_type}
+split: train
+# json_html: clean_html_PubTabNet_2.0.0.jsonl
+json_html: PubTabNet_2.0.0.jsonl
+transform: ${dataset.augmentation}
+cell_limit: ${dataset.cell_limit}
