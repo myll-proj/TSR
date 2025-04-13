@@ -15,6 +15,7 @@ Try out the officially provided inference `TSR-框架.ipynb` with table image!
 
 2.Training run like `make experiments/ssp_2m_pub_bbox_base/.done_finetune`
 
+3.For more, see `Makefile` and `CONFIG.mk`
 
 ## Acknowledgment
 Thanks to [unitable](https://github.com/poloclub/unitable) for providing the open-source framework.
