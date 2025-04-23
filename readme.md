@@ -14,6 +14,7 @@ Try out the officially provided inference `TSR-框架.ipynb` with table image!
 
 ## Train
 1.Prepare dataset available [PubTabNet](https://github.com/ibm-aur-nlp/PubTabNet).
+- If you feel that the dataset is too large, try running the following `python split_pub.py` to select a portion of the training set
 
 2.Training run like `make experiments/ssp_2m_pub_bbox_base/.done_finetune`
 
