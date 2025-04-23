@@ -1,4 +1,6 @@
 ## Get Started
+This is the table structure recognition of the table image：
+
 1.create your evn `conda create -n mytable python=3.9 -y` and install required packages including: [Pytorch](https://pytorch.org/) with torch version 1.13
 
 2.run `pip install -r requirements.txt`
