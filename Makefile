@@ -93,7 +93,7 @@ experiments/pubtabnet/.done_%:
 > @mkdir -p $(@D)
 > cd $(SRC) && $(TORCHRUN) -m main ++name=$* $(EXP_$*) ++trainer.mode="test" \
   ++hydra.run.dir="../$(@D)" $(PUBTABNET) ++trainer.trainer.model_weights=$(BEST_MODEL)
-> $(PYTHON) -m src.utils.engine -f $(@D)/$* -t bbox
+> cd $(SRC) && $(PYTHON) -m utils.engine -f ../$(@D)/$* -t bbox
 > touch $@
 
 # Scend:
