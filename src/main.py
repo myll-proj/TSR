@@ -12,6 +12,12 @@ import torch.multiprocessing as mp
 from torch.utils.data.distributed import DistributedSampler
 from torch.distributed import init_process_group, destroy_process_group
 
+import sys
+from pathlib import Path
+
+# 添加项目根目录到 sys.path
+sys.path.append(str(Path(__file__).resolve().parent.parent))
+
 from src.utils import printer, count_total_parameters
 
 log = logging.getLogger(__name__)
